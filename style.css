@@ -128,12 +128,6 @@ footer {
    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.linkedin-icon img {
-   width: 24px;
-   height: 24px;
-   margin-right: 8px;
-}
-
 .footer-text {
    font-size: 16px;
    color: #333;
