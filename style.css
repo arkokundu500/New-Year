@@ -1,0 +1,141 @@
+ html{
+  box-sizing: border-box;
+  font-size:180%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ *,
+ *::after,
+ *::before{
+    margin:0;
+    padding:0;
+    font-family:inherit;
+    box-sizing:inherit;
+ }
+
+ .intro{
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+    background:#0048aa;
+    transition: 1s;
+ }
+ .image img{
+    top:100px;
+    position:absolute;
+ }
+ .intro p{
+    color:darkgray;
+    font-size:90 px;
+    margin-top:10px;
+    transition:ease-in-out 0.7s;
+ }
+.intro.img{
+    height:200px;
+}
+ .logo{
+    top:50px;
+    font-size:15 rem;
+    color:#ffffff;
+ }
+ .logo-parts{
+    position:relative;
+    display:inline-block;
+    opacity:0;
+ }
+ .logo-parts.active{
+    opacity:1;
+    transition:ease-in-out 0.7s;
+ }
+ .logo-parts.fade{
+    opacity:o;
+    transition:ease-in-out 0.7s;
+ }
+
+ .new{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background:#02c0f0;
+    width:100%;
+    height:100vh;
+    left:0;
+    top:0;
+ }
+.new img{
+    padding: 50px;
+    margin: 20px;
+    justify-content: center;
+    width:700px;
+    height: fit-content;
+}
+.new p{
+    padding:40px;
+    color:darkmagenta;
+    font-size: 40px;
+    margin-top:10px;
+}
+.confetti-button:hover{
+   background: #2fdbb6;
+}
+confetti-button:active{
+   background: #1da88a;
+}
+.confetti-button {
+   position: relative;
+   display: inline-block;
+   border-radius: 8px;
+   font-size: 22px;
+   padding: 16px 32px;
+   width:200px;
+   height:60px;
+   transition-duration: 0.4s;
+   cursor:pointer;
+}
+.confetti-button:hover{
+   background-color: #1da88a;
+   color:white;
+}
+.button-wrapper canvas{
+   position:absolute;
+   top:70%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   pointer-events: none;
+}
+
+
+/*Footer*/
+
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #d4eb07;
+   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-icon img {
+   width: 24px;
+   height: 24px;
+   margin-right: 8px;
+}
+
+.footer-text {
+   font-size: 16px;
+   color: #333;
+   font-weight: bold;
+}
